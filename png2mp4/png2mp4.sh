@@ -21,7 +21,7 @@ echo $framerate
 
 echo $scale
 
-#ffmpeg -framerate $framerate -i %d.png -vf "scale=$scale" -c:v libx264 -pix_fmt yuv420p "$name".mp4
+ffmpeg -framerate $framerate -i %d.png -vf "scale=$scale" -c:v libx264 -pix_fmt yuv420p "$name".mp4
 
 
 
